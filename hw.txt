@@ -1,0 +1,35 @@
+// Question 1
+let user = {
+    firstName: "Saravana",
+    lastName: "Kumar",
+    email: "saravana@gmail.com"
+};
+
+let fullName = (user.firstName + " " + user.lastName).toUpperCase();
+let domain = user.email.split("@")[1];
+
+console.log("Full Name : " + fullName);
+console.log("Email Domain : " + domain);
+
+
+// Question 2
+let sentence = "JavaScript is Easy";
+
+let details = {
+    characters: sentence.length,
+    words: sentence.split(" ").length,
+    lowercase: sentence.toLowerCase()
+};
+
+console.log("Characters : " + details.characters);
+console.log("Words : " + details.words);
+console.log("Lowercase : " + details.lowercase);
+
+
+// Question 3
+let name = "Saravana";
+let phone = "9876543210";
+
+let username = name.substring(0,3) + phone.substring(phone.length-2);
+
+console.log("Username : " + username.toLowerCase());
